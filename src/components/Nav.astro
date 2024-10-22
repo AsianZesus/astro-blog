@@ -1,0 +1,14 @@
+---
+// data imports
+import navData from "../data/navData";
+---
+
+<header class="primary-header">
+  <div class="container">
+    <nav class="primary-navigation">
+      <ul role="list" class="nav-list">
+        {navData.map((item) => <a href={item.path}>{item.name}</a>)}
+      </ul>
+    </nav>
+  </div>
+</header>

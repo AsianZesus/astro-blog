@@ -1,16 +1,41 @@
 ---
-
+// component imports
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="Writings on">
+  <main>
+    <section>
+      <div class="contianer">
+        <div class="main-column">
+          <div>
+            <h1 class="fs-primary-heading fw-bold">
+              Documented train of thoughts
+            </h1>
+            <span>21 March, 2023 - 3 thoughts</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="blog-column">
+          <div>
+            <h2 class="fs-secondary-heading fw-bold">
+              Blog Heading asdfasdfasdf
+            </h2>
+            <span>ETHICS</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              veritatis fugit dicta officiis amet laudantium voluptates
+              obcaecati accusamus exercitationem soluta, minus quos ex vel,
+              doloribus libero aspernatur labore aliquam quidem.
+            </p>
+            <span>24 June, 2023</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</MainLayout>
