@@ -3,12 +3,10 @@
 import navData from "../data/navData";
 ---
 
-<header class="primary-header">
+<header class="primary-header fw-bold fs-450">
   <div class="container">
     <nav class="primary-navigation">
-      <ul role="list" class="nav-list">
-        {navData.map((item) => <a href={item.path}>{item.name}</a>)}
-      </ul>
+      {navData.map((item) => <a href={item.path}>{item.name}</a>)}
     </nav>
   </div>
 </header>
